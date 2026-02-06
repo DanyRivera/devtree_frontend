@@ -8,3 +8,7 @@ export type RegisterForm = Pick<User, 'handle' | 'email' | 'name'> & {
     password: String
     password_confirmation: String
 }
+
+export type LoginForm = Pick<User, 'email'> & {
+    password: string
+}
